@@ -6,9 +6,23 @@
         xmlns:local="clr-namespace:WpfTest1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="BodyTextStyle" TargetType="{x:Type TextBlock}"/>
+    </Window.Resources>
     <Grid>
-        <TextBlock x:Name="output" HorizontalAlignment="Left" Margin="338,126,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="325,179,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
-
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="button1" Content="Show a message" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button1_Click"/>
+        <Button x:Name="button2" Content="If/Else" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button2_Click"/>
+        <Button x:Name="button3" Content="Another conditional test" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Click="Button3_Click"/>
+        <Button x:Name="button4" Content="A loop" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Click="Button4_Click"/>
+        <TextBlock x:Name="myLabel" HorizontalAlignment="Center" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" Style="{DynamicResource BodyTextStyle}"/>
     </Grid>
 </Window>

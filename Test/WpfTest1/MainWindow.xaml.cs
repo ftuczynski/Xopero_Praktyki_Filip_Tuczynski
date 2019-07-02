@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
+using System;
 
 namespace WpfTest1
 {
@@ -25,29 +13,51 @@ namespace WpfTest1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button1_Click(object sender, RoutedEventArgs e)
         {
-            int number = 15;
-            number = number + 10;
-            number = 36 * 15;
-            number = 12 - (42 / 7);
-            number += 10;
-            number *= 3;
-            number = 71 / 3;
+            string name = "Quentin";
+            int x = 3;
+            x *= 17;
+            double d = Math.PI / 2;
+            myLabel.Text = "nazwa to " + name + "\nx jest równe " + x + "\nd jest równe " + d;
+        }
 
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            int x = 5;
+            if(x==10)
+            {
+                myLabel.Text = "x musi być równe 10";
+            }
+            else
+            {
+                myLabel.Text = "x nie jest równe 10";
+            }
+        }
+
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+            int someValue = 4;
+            string name = "Filip";
+            if ((someValue == 3) && (name.Equals("Janek")))
+            {
+                myLabel.Text = "someValue jest równe 3 i name jest równe Janek";
+            }
+            myLabel.Text = "ten wiersz jest wykonywany bez względu na warunki";
+        }
+
+        private void Button4_Click(object sender, RoutedEventArgs e)
+        {
             int count = 0;
-            count++;
-            count--;
-
-            string result = "hello";
-            result += " again " + result;
-            output.Text = result;
-            result = "the value is: " + count;
-            result = "";
-
-            bool yesNo = false;
-            bool anotherBool = true;
-            yesNo = !anotherBool;
+            while (count<10)
+            {
+                count++;
+            }
+            for (int i=0;i<5;i++)
+            {
+                count--;
+            }
+            myLabel.Text = "odpowiedź brzmi: " + count;
         }
     }
 }
