@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfTest2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest2"
+        mc:Ignorable="d"
+        Title="Fun with if/else statements" Height="150" Width="450">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="changeText" Content="Change the label if checked" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Click="ChangeText_Click"/>
+        <CheckBox x:Name="enableCheckbox" Content="Enable label changing" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center"/>
+        <TextBlock x:Name="labelToChange" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="1" Grid.ColumnSpan="2" Text="Press the button to set my text" VerticalAlignment="Center"/>
+
+    </Grid>
+</Window>
