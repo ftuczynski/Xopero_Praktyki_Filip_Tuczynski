@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_Alien", "Wpf_Alien\Wpf_Alien.csproj", "{F9A1A5C4-2080-4402-BD05-01744891618D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTest1", "WpfTest1\WpfTest1.csproj", "{F5E6DEB9-6494-4C47-87D6-0585A904F4C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F9A1A5C4-2080-4402-BD05-01744891618D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9A1A5C4-2080-4402-BD05-01744891618D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9A1A5C4-2080-4402-BD05-01744891618D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E6DEB9-6494-4C47-87D6-0585A904F4C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E6DEB9-6494-4C47-87D6-0585A904F4C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E6DEB9-6494-4C47-87D6-0585A904F4C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E6DEB9-6494-4C47-87D6-0585A904F4C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
