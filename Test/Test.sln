@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage163", "Wind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage168", "WindowsFormsPage168\WindowsFormsPage168.csproj", "{EAC50C31-4E99-4771-AC0F-039E8B52D676}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypingGame", "TypingGame\TypingGame.csproj", "{1F4D904C-E2DD-42A6-813E-D1B0B98D7095}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{EAC50C31-4E99-4771-AC0F-039E8B52D676}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAC50C31-4E99-4771-AC0F-039E8B52D676}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAC50C31-4E99-4771-AC0F-039E8B52D676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F4D904C-E2DD-42A6-813E-D1B0B98D7095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F4D904C-E2DD-42A6-813E-D1B0B98D7095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F4D904C-E2DD-42A6-813E-D1B0B98D7095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F4D904C-E2DD-42A6-813E-D1B0B98D7095}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
