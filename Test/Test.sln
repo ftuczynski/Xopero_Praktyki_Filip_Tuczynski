@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage98", "Windo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage105", "WindowsFormsPage105\WindowsFormsPage105.csproj", "{F4A9144C-9C6F-4023-90B1-86CE0A894584}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage129", "WindowsFormsPage129\WindowsFormsPage129.csproj", "{A580F1D1-278E-4740-9572-B8102001C0B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{F4A9144C-9C6F-4023-90B1-86CE0A894584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4A9144C-9C6F-4023-90B1-86CE0A894584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4A9144C-9C6F-4023-90B1-86CE0A894584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A580F1D1-278E-4740-9572-B8102001C0B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A580F1D1-278E-4740-9572-B8102001C0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A580F1D1-278E-4740-9572-B8102001C0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A580F1D1-278E-4740-9572-B8102001C0B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
