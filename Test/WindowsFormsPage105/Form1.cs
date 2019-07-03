@@ -16,5 +16,11 @@ namespace WindowsFormsPage105
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int len = Talker.BlahBlahBlah(textBox1.Text, (int)numericUpDown1.Value);
+            MessageBox.Show("The message lenght is " + len);
+        }
     }
 }
