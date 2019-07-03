@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage146", "Wind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage151", "WindowsFormsPage151\WindowsFormsPage151.csproj", "{BE764E30-7C1F-473F-BA76-4493C319CA70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage163", "WindowsFormsPage163\WindowsFormsPage163.csproj", "{5CCAE999-E2D9-4480-AA96-243EA090D464}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{BE764E30-7C1F-473F-BA76-4493C319CA70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE764E30-7C1F-473F-BA76-4493C319CA70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE764E30-7C1F-473F-BA76-4493C319CA70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CCAE999-E2D9-4480-AA96-243EA090D464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CCAE999-E2D9-4480-AA96-243EA090D464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CCAE999-E2D9-4480-AA96-243EA090D464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CCAE999-E2D9-4480-AA96-243EA090D464}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
