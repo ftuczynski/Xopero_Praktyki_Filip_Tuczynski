@@ -16,5 +16,13 @@ namespace WindowsFormsPage146
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            decimal myDecimalValue = 10;
+            int myIntValue = (int) myDecimalValue;
+
+            MessageBox.Show("The myIntValue is " + myIntValue);
+        }
     }
 }
