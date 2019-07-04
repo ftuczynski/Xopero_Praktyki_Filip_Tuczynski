@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypingGame", "TypingGame\Ty
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage180", "WindowsFormsPage180\WindowsFormsPage180.csproj", "{60220C28-5AD0-41AB-AFAA-D974C681BB46}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADayAtTheRaces", "ADayAtTheRaces\ADayAtTheRaces.csproj", "{6071B12A-782F-46F7-961F-2675B05E11E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{60220C28-5AD0-41AB-AFAA-D974C681BB46}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60220C28-5AD0-41AB-AFAA-D974C681BB46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60220C28-5AD0-41AB-AFAA-D974C681BB46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6071B12A-782F-46F7-961F-2675B05E11E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6071B12A-782F-46F7-961F-2675B05E11E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6071B12A-782F-46F7-961F-2675B05E11E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6071B12A-782F-46F7-961F-2675B05E11E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
