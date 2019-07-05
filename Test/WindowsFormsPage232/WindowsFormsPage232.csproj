@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BirthdayParty.cs" />
     <Compile Include="DinnerParty.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>

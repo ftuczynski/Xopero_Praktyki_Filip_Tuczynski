@@ -17,7 +17,8 @@ namespace WindowsFormsPage232
         {
             get
             {
-                return (HealthyOption ? 0.95M : 1.0M) * (((CostOfFoodPerPerson + CalculateCostOfBeveragesPerPerson()) * NumberOfPeople) + CalculateCostOfDecorations());
+                return (HealthyOption ? 0.95M : 1.0M) * (((CostOfFoodPerPerson + CalculateCostOfBeveragesPerPerson()) * NumberOfPeople)
+                    + CalculateCostOfDecorations()) + (NumberOfPeople > 12 ? 100M : 0M);
             }
         }
 
