@@ -114,6 +114,10 @@ namespace ADayAtTheRaces
 
         private void raceButton_Click(object sender, EventArgs e)
         {
+            for(int i=0;i<4;i++)
+            {
+                GreyhoundArray[i].RacetrackLength = racetrackPictureBox.Width - pictureBoxDog1.Width;
+            }
             timer1.Start();
             groupBox1.Enabled = false;
         }

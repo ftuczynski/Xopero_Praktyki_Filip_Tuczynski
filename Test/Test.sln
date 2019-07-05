@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage180", "Wind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADayAtTheRaces", "ADayAtTheRaces\ADayAtTheRaces.csproj", "{6071B12A-782F-46F7-961F-2675B05E11E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage200", "WindowsFormsPage200\WindowsFormsPage200.csproj", "{C62A54F0-88FE-4D79-BCB2-20264004291C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{6071B12A-782F-46F7-961F-2675B05E11E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6071B12A-782F-46F7-961F-2675B05E11E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6071B12A-782F-46F7-961F-2675B05E11E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62A54F0-88FE-4D79-BCB2-20264004291C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62A54F0-88FE-4D79-BCB2-20264004291C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62A54F0-88FE-4D79-BCB2-20264004291C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62A54F0-88FE-4D79-BCB2-20264004291C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
