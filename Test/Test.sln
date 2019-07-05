@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePage273", "ConsolePa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage274", "WindowsFormsPage274\WindowsFormsPage274.csproj", "{05DA734D-E54A-451B-8DF7-0C407DFD3315}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeeHiveManagementSystem", "BeeHiveManagementSystem\BeeHiveManagementSystem.csproj", "{C6FE0B27-C4F2-4A95-B5BB-2603153E8888}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +149,10 @@ Global
 		{05DA734D-E54A-451B-8DF7-0C407DFD3315}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05DA734D-E54A-451B-8DF7-0C407DFD3315}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05DA734D-E54A-451B-8DF7-0C407DFD3315}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6FE0B27-C4F2-4A95-B5BB-2603153E8888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6FE0B27-C4F2-4A95-B5BB-2603153E8888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6FE0B27-C4F2-4A95-B5BB-2603153E8888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6FE0B27-C4F2-4A95-B5BB-2603153E8888}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
