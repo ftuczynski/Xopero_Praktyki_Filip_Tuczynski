@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BeeHiveManagementSystem
 {
-    class Worker
+    class Worker : Bee
     {
         private string currentJob;
         public string CurrentJob
@@ -27,8 +27,10 @@ namespace BeeHiveManagementSystem
         private string[] jobsICanDo;
         private int shiftsToWork;
         private int shiftsWorked;
+        const double honeyUnitsPerShiftWorked = .65;
 
-        public Worker(string[] jobsICanDo)
+        public Worker(string[] jobsICanDo,double weightMg)
+            :base(weightMg)
         {
             this.jobsICanDo = jobsICanDo;
         }
@@ -61,6 +63,10 @@ namespace BeeHiveManagementSystem
             }
             else
                 return false;
+        }
+        public override double HoneyConsumptionRate() 
+        {
+            return base.HoneyConsumptionRate() + (shiftsWorked * honeyUnitsPerShiftWorked);
         }
     }
 }
