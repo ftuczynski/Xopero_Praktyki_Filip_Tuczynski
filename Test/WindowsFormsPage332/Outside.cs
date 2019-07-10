@@ -10,7 +10,7 @@ namespace WindowsFormsPage332 {
         public override string Description {
             get {
                 if (this.hot)
-                    return base.Description + " It's very hot here.";
+                    return base.Description + " It's very hot here. ";
                 else
                     return base.Description;
             }

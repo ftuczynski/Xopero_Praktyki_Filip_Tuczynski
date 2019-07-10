@@ -9,7 +9,7 @@ namespace WindowsFormsPage332 {
         private string decoration;
         public override string Description {
             get {
-                return base.Description + "You see " + decoration + ".";
+                return base.Description + "You see " + decoration + ". ";
             }
         }
 

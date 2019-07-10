@@ -16,7 +16,7 @@ namespace WindowsFormsPage332 {
                     if (i != Exits.Length - 1)
                         description += ",";
                 }
-                description += ".";
+                description += ". ";
                 return description;
             }
         }

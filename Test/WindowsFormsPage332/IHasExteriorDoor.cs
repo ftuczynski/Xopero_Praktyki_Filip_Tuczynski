@@ -7,6 +7,6 @@ using System.Threading.Tasks;
 namespace WindowsFormsPage332 {
     interface IHasExteriorDoor {
         string DoorDescription { get; }
-        Location DoorLocation { get; }
+        Location DoorLocation { get; set; }
     }
 }

@@ -55,7 +55,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePage299", "ConsolePa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePage300", "ConsolePage300\ConsolePage300.csproj", "{3E60E9D9-EA98-49DF-BBF5-0A7168138EBC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage332", "WindowsFormsPage332\WindowsFormsPage332.csproj", "{41901CC7-5D70-4069-AD52-2934F0A933DC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HideAndSeek", "WindowsFormsPage332\HideAndSeek.csproj", "{41901CC7-5D70-4069-AD52-2934F0A933DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
