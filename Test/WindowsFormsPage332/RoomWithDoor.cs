@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace WindowsFormsPage332 {
-    class RoomWithDoor : Room, IHasExteriorDoor {
+    class RoomWithDoor : RoomWithHidingPlace, IHasExteriorDoor {
         public string DoorDescription { get; private set; }
         public Location DoorLocation { get; set; }
         public override string Description {
@@ -14,8 +14,8 @@ namespace WindowsFormsPage332 {
             }
         }
 
-        public RoomWithDoor(string name, string decoration, string doorDescription)
-            : base(name, decoration) {
+        public RoomWithDoor(string nameOfTheHiddingPlace ,string name, string decoration, string doorDescription)
+            : base(nameOfTheHiddingPlace ,name, decoration) {
             this.DoorDescription = doorDescription;
         }
     }
