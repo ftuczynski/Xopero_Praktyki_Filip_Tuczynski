@@ -71,6 +71,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage382", "Wind
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage389", "WindowsFormsPage389\WindowsFormsPage389.csproj", "{2BC23372-53D0-4A70-B3B7-EE3F08D0B40E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoFish", "GoFish\GoFish.csproj", "{2CBE49BE-25A7-43FD-BEF3-52974AEF19AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -213,6 +215,10 @@ Global
 		{2BC23372-53D0-4A70-B3B7-EE3F08D0B40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2BC23372-53D0-4A70-B3B7-EE3F08D0B40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2BC23372-53D0-4A70-B3B7-EE3F08D0B40E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CBE49BE-25A7-43FD-BEF3-52974AEF19AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBE49BE-25A7-43FD-BEF3-52974AEF19AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CBE49BE-25A7-43FD-BEF3-52974AEF19AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CBE49BE-25A7-43FD-BEF3-52974AEF19AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
