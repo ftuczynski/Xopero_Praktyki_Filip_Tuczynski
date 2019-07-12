@@ -26,7 +26,7 @@ namespace ConsolePage375 {
 
         public static void ReadCards(List<Card> cards) {
             foreach(Card card in cards) {
-                Console.WriteLine(card.Name);
+                Console.WriteLine(card);
             }
         }
     }

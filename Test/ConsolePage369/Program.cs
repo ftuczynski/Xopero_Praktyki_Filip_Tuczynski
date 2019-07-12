@@ -15,6 +15,7 @@ namespace ConsolePage369 {
                 new Duck() { Kind = KindOfDuck.Mallard, Size = 14 },
                 new Duck() { Kind = KindOfDuck.Decoy, Size = 13 },
             };
+
             DuckComparer comparer = new DuckComparer();
             
             PrintDucks(ducks);
@@ -26,12 +27,11 @@ namespace ConsolePage369 {
             comparer.SortBy = SortCriteria.SizeThenKind;
             ducks.Sort(comparer);
             PrintDucks(ducks);
-
             Console.ReadKey();
         }
         public static void PrintDucks(List<Duck> ducks) {
             foreach (Duck duck in ducks)
-                Console.WriteLine(duck.Size.ToString() + "-inch " + duck.Kind.ToString());
+                Console.WriteLine(duck);
             Console.WriteLine("End of ducks!");
         }
     }

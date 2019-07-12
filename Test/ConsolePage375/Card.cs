@@ -28,5 +28,9 @@ namespace ConsolePage375 {
             this.Suit = suit;
             this.Value = value;
         }
+
+        public override string ToString() {
+            return Name;
+        }
     }
 }
