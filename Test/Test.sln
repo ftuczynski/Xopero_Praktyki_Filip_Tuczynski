@@ -75,6 +75,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoFish", "GoFish\GoFish.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage405", "WindowsFormsPage405\WindowsFormsPage405.csproj", "{B9D2A59C-A6D1-411B-A306-A841BA8191AA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePage414", "ConsolePage414\ConsolePage414.csproj", "{273EB39F-1D60-4598-8FE1-5E0C941D57E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -225,6 +227,10 @@ Global
 		{B9D2A59C-A6D1-411B-A306-A841BA8191AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9D2A59C-A6D1-411B-A306-A841BA8191AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9D2A59C-A6D1-411B-A306-A841BA8191AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{273EB39F-1D60-4598-8FE1-5E0C941D57E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273EB39F-1D60-4598-8FE1-5E0C941D57E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273EB39F-1D60-4598-8FE1-5E0C941D57E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273EB39F-1D60-4598-8FE1-5E0C941D57E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
