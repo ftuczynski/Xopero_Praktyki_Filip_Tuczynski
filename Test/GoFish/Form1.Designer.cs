@@ -94,6 +94,7 @@
             this.textBooks.Multiline = true;
             this.textBooks.Name = "textBooks";
             this.textBooks.ReadOnly = true;
+            this.textBooks.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBooks.Size = new System.Drawing.Size(368, 107);
             this.textBooks.TabIndex = 6;
             // 

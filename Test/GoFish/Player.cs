@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace GoFish {
@@ -18,7 +15,8 @@ namespace GoFish {
             this.name = name;
             this.random = random;
             this.textBoxOnForm = textBoxOnForm;
-            this.textBoxOnForm.Text += this.name + " has just joined the game \r\n";
+            this.cards = new Deck(new Card[] { });
+            this.textBoxOnForm.Text += this.name + " has just joined the game" + Environment.NewLine;
         }
 
         public void TakeCard(Card card) {
@@ -59,28 +57,36 @@ namespace GoFish {
         }
 
         public Deck DoYouHaveAny(Values value) {
-            Deck deckToReturn = new Deck(new Card[] { });
-            deckToReturn = cards.PullOutValues(value);
-            textBoxOnForm.Text += Name + " has " + deckToReturn.Count.ToString() + " " + Card.Plural(value) + "\r\n";
+            Deck deckToReturn = cards.PullOutValues(value);
+            textBoxOnForm.Text += Name + " has " + deckToReturn.Count.ToString() + " " + Card.Plural(value) + Environment.NewLine;
             return deckToReturn;
         }
 
         public void AskForACard(List<Player> players, int myIndex, Deck stock) {
-            // Here's an overloaded version of AskForACard()—choose a random value
-            // from the deck using GetRandomValue() and ask for it using AskForACard()
+            if (stock.Count > 0) {
+                if (cards.Count == 0) {
+                    cards.Add(stock.Deal());
+                }
+                AskForACard(players, myIndex, stock, GetRandomValue());
+            }
         }
 
         public void AskForACard(List<Player> players, int myIndex, Deck stock, Values value) {
-            // Ask the other players for a value. First add a line to the TextBox: "Joe asks
-            // if anyone has a Queen". Then go through the list of players that was passed in
-            // as a parameter and ask each player if he has any of the value (using his
-            // DoYouHaveAny() method). He'll pass you a deck of cards—add them to my deck.
-            // Keep track of how many cards were added. If there weren't any, you'll need
-            // to deal yourself a card from the stock (which was also passed as a parameter),
-            // and you'll have to add a line to the TextBox: "Joe had to draw from the stock"
-            textBoxOnForm.Text += Name + " asks if anyone has a " + value.ToString() + ". \r\n";
-            foreach (Player player in players) {
-
+            textBoxOnForm.Text += Name + " asks if anyone has a " + value.ToString() + "." + Environment.NewLine;
+            int j = 0;
+            for (int i = 0; i < players.Count; i++) {
+                if (i != myIndex) {
+                    Player player = players[i];
+                    Deck CardsGiven = player.DoYouHaveAny(value);
+                    j += CardsGiven.Count;
+                    while (CardsGiven.Count > 0) {
+                        cards.Add(CardsGiven.Deal());
+                    }
+                }
+            }
+            if (j == 0 && stock.Count > 0) {
+                cards.Add(stock.Deal());
+                textBoxOnForm.Text += Name + " had to draw from the stock" + Environment.NewLine;
             }
         }
 
