@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 
@@ -53,8 +46,8 @@ namespace WindowsFormsPage432 {
                 return;
             }
             saveFileDialog1.InitialDirectory = selectedFolder;
-            saveFileDialog1.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-            saveFileDialog1.FileName = description.Text + ".txt";
+            saveFileDialog1.Filter = "Excuse files (*.excuse)|*.excuse";
+            saveFileDialog1.FileName = description.Text + ".excuse";
             DialogResult result = saveFileDialog1.ShowDialog();
             if (result == DialogResult.OK) {
                 currentExcuse.Save(saveFileDialog1.FileName);
@@ -66,8 +59,8 @@ namespace WindowsFormsPage432 {
         private void openButton_Click(object sender, EventArgs e) {
             if (CheckChanged()) {
                 openFileDialog1.InitialDirectory = selectedFolder;
-                openFileDialog1.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-                openFileDialog1.FileName = description.Text + ".txt";
+                openFileDialog1.Filter = "Excuse files (*.excuse)|*.excuse| All files (*.*)|*.*";
+                openFileDialog1.FileName = description.Text + ".excuse";
                 DialogResult result = openFileDialog1.ShowDialog();
                 if (result == DialogResult.OK) {
                     currentExcuse = new Excuse(openFileDialog1.FileName);
