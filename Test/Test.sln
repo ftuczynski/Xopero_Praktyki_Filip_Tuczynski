@@ -91,6 +91,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePage497", "ConsolePa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexDumper", "HexDumper\HexDumper.csproj", "{6125B268-00AE-4E02-940F-7AEF1A69D18A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TheQuest", "TheQuest\TheQuest.csproj", "{1B23CA52-EBF5-43EC-92FA-FC08EE2F0553}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -273,6 +275,10 @@ Global
 		{6125B268-00AE-4E02-940F-7AEF1A69D18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6125B268-00AE-4E02-940F-7AEF1A69D18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6125B268-00AE-4E02-940F-7AEF1A69D18A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B23CA52-EBF5-43EC-92FA-FC08EE2F0553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B23CA52-EBF5-43EC-92FA-FC08EE2F0553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B23CA52-EBF5-43EC-92FA-FC08EE2F0553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B23CA52-EBF5-43EC-92FA-FC08EE2F0553}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
