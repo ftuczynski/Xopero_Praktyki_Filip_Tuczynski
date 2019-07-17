@@ -89,6 +89,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePage451", "ConsolePa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePage497", "ConsolePage497\ConsolePage497.csproj", "{6EF9F8B2-1E8E-4EDA-A01B-4D39DAE3C18E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexDumper", "HexDumper\HexDumper.csproj", "{6125B268-00AE-4E02-940F-7AEF1A69D18A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -267,6 +269,10 @@ Global
 		{6EF9F8B2-1E8E-4EDA-A01B-4D39DAE3C18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EF9F8B2-1E8E-4EDA-A01B-4D39DAE3C18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EF9F8B2-1E8E-4EDA-A01B-4D39DAE3C18E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6125B268-00AE-4E02-940F-7AEF1A69D18A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6125B268-00AE-4E02-940F-7AEF1A69D18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6125B268-00AE-4E02-940F-7AEF1A69D18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6125B268-00AE-4E02-940F-7AEF1A69D18A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
