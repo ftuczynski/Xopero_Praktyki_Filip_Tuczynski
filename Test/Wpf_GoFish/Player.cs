@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Windows.Controls;
 
 namespace Wpf_GoFish {
     class Player {
@@ -8,15 +7,15 @@ namespace Wpf_GoFish {
         public string Name { get { return name; } }
         private Random random;
         private Deck cards;
-        private TextBox textBoxOnForm;
         public int CardCount { get { return cards.Count; } }
+        private Game game;
 
-        public Player(String name, Random random, TextBox textBoxOnForm) {
+        public Player(String name, Random random, Game game) {
             this.name = name;
             this.random = random;
-            this.textBoxOnForm = textBoxOnForm;
+            this.game = game;
             this.cards = new Deck(new Card[] { });
-            this.textBoxOnForm.Text += this.name + " has just joined the game" + Environment.NewLine;
+            game.AddProgress(name + " has just joined the game");
         }
 
         public void TakeCard(Card card) {
@@ -58,7 +57,7 @@ namespace Wpf_GoFish {
 
         public Deck DoYouHaveAny(Values value) {
             Deck deckToReturn = cards.PullOutValues(value);
-            textBoxOnForm.Text += Name + " has " + deckToReturn.Count.ToString() + " " + Card.Plural(value) + Environment.NewLine;
+            game.AddProgress(Name + " has " + deckToReturn.Count.ToString() + " " + Card.Plural(value));
             return deckToReturn;
         }
 
@@ -72,7 +71,7 @@ namespace Wpf_GoFish {
         }
 
         public void AskForACard(List<Player> players, int myIndex, Deck stock, Values value) {
-            textBoxOnForm.Text += Name + " asks if anyone has a " + value.ToString() + "." + Environment.NewLine;
+            game.AddProgress(Name + " asks if anyone has a " + value + ".");
             int j = 0;
             for (int i = 0; i < players.Count; i++) {
                 if (i != myIndex) {
@@ -86,7 +85,7 @@ namespace Wpf_GoFish {
             }
             if (j == 0 && stock.Count > 0) {
                 cards.Add(stock.Deal());
-                textBoxOnForm.Text += Name + " had to draw from the stock" + Environment.NewLine;
+                game.AddProgress(Name + " had to draw from the stock.");
             }
         }
 
