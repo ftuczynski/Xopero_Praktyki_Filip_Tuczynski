@@ -70,7 +70,9 @@ namespace WindowsFormsPage432 {
         }
 
         private void randomButton_Click(object sender, EventArgs e) {
-            if (CheckChanged()) {
+            if (Directory.GetFiles(selectedFolder).Length == 0)
+                MessageBox.Show("There are no excuse files in the selected folder.");
+            else if (CheckChanged()) {
                 currentExcuse = new Excuse(random, selectedFolder);
                 UpdateForm(false);
             }

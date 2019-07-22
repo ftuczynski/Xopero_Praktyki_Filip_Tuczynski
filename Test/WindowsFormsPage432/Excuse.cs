@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
+using System.Windows.Forms;
 
 namespace WindowsFormsPage432 {
     [Serializable]
@@ -19,38 +21,27 @@ namespace WindowsFormsPage432 {
         }
 
         public Excuse(Random random, string folder) {
-            string[] fileNames = Directory.GetFiles(folder, "*.excuse");
-            OpenFile(fileNames[random.Next(fileNames.Length)]);
+                string[] fileNames = Directory.GetFiles(folder, "*.excuse");
+                OpenFile(fileNames[random.Next(fileNames.Length)]);
         }
-
-        //private void OpenFile(string path) {
-        //    this.ExcusePath = path;
-        //    using (StreamReader reader = new StreamReader(path)) {
-        //        Description = reader.ReadLine();
-        //        Results = reader.ReadLine();
-        //        LastUsed = Convert.ToDateTime(reader.ReadLine());
-        //    }
-        //}
 
         private void OpenFile(string path) {
-            this.ExcusePath = path;
-            BinaryFormatter bf = new BinaryFormatter();
-            Excuse excuse;
-            using (Stream input = File.OpenRead(path)) {
-                excuse = (Excuse)bf.Deserialize(input);
+            try {
+                this.ExcusePath = path;
+                BinaryFormatter bf = new BinaryFormatter();
+                Excuse excuse;
+                using (Stream input = File.OpenRead(path)) {
+                    excuse = (Excuse)bf.Deserialize(input);
+                }
+                Description = excuse.Description;
+                Results = excuse.Results;
+                LastUsed = excuse.LastUsed;
             }
-            Description = excuse.Description;
-            Results = excuse.Results;
-            LastUsed = excuse.LastUsed;
+            catch(SerializationException) {
+                MessageBox.Show("Unable to read " + ExcusePath);
+                LastUsed = DateTime.Now;
+            }
         }
-
-        //public void Save(string fileName) {
-        //    using (StreamWriter writer = new StreamWriter(fileName)) {
-        //        writer.WriteLine(Description);
-        //        writer.WriteLine(Results);
-        //        writer.WriteLine(LastUsed);
-        //    }
-        //}
 
         public void Save(string fileName) {
             using (Stream output = File.Create(fileName)) {
