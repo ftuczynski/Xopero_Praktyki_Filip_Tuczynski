@@ -125,6 +125,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePage731", "ConsolePa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsPage732", "WindowsFormsPage732\WindowsFormsPage732.csproj", "{4E403331-95D7-40CF-BF50-DE23DD1075B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_BasketballRoster", "Wpf_BasketballRoster\Wpf_BasketballRoster.csproj", "{7BA76704-6A49-4EF9-911C-11B02C932D74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -375,6 +377,10 @@ Global
 		{4E403331-95D7-40CF-BF50-DE23DD1075B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E403331-95D7-40CF-BF50-DE23DD1075B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E403331-95D7-40CF-BF50-DE23DD1075B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BA76704-6A49-4EF9-911C-11B02C932D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BA76704-6A49-4EF9-911C-11B02C932D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BA76704-6A49-4EF9-911C-11B02C932D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BA76704-6A49-4EF9-911C-11B02C932D74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
