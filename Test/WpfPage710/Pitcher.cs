@@ -3,7 +3,7 @@ using System.Collections.ObjectModel;
 
 namespace WpfPage710 {
     class Pitcher {
-        public ObservableCollection<string> PitcherSays;
+        public ObservableCollection<string> PitcherSays = new ObservableCollection<string>();
         private int pitchNumber = 0;
 
         public  Pitcher(Ball ball) {
