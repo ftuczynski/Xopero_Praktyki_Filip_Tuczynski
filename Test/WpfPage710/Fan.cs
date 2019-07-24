@@ -8,7 +8,7 @@ namespace WpfPage710 {
         private int pitchNumber = 0;
 
         public Fan(Ball ball) {
-            ball.BallInPlay += ball_BallInPlay;
+            ball.BallInPlay += new EventHandler<BallEventArgs>(ball_BallInPlay);
         }
 
         private void ball_BallInPlay(object sender, EventArgs e) {
