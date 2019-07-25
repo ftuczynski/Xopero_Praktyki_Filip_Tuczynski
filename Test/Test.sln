@@ -129,6 +129,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_BasketballRoster", "Wpf
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_Stopwatch", "Wpf_Stopwatch\Wpf_Stopwatch.csproj", "{6E744456-4B3C-4708-8187-BE7BA26AF072}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf_AnimatedBee", "Wpf_AnimatedBee\Wpf_AnimatedBee.csproj", "{1D2C7F5D-3CC8-447F-A81E-72DCA66E8A17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -387,6 +389,10 @@ Global
 		{6E744456-4B3C-4708-8187-BE7BA26AF072}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E744456-4B3C-4708-8187-BE7BA26AF072}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E744456-4B3C-4708-8187-BE7BA26AF072}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D2C7F5D-3CC8-447F-A81E-72DCA66E8A17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D2C7F5D-3CC8-447F-A81E-72DCA66E8A17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D2C7F5D-3CC8-447F-A81E-72DCA66E8A17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D2C7F5D-3CC8-447F-A81E-72DCA66E8A17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
