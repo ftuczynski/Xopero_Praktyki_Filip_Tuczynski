@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Wpf_Stopwatch.Model {
     class StopwatchModel {
         private DateTime? _started;
         private TimeSpan? _previousElapsedTime;
         public bool Running { get { return _started.HasValue; } }
+        public TimeSpan? LapTime { get; private set; }
         public TimeSpan? Elapsed {
             get {
                 if (_started.HasValue) {
@@ -37,9 +34,21 @@ namespace Wpf_Stopwatch.Model {
         public void Reset() {
             _previousElapsedTime = null;
             _started = null;
+            LapTime = null;
         }
         public StopwatchModel() {
             Reset();
+        }
+        public void Lap() {
+            LapTime = Elapsed;
+            OnLapTImeUpdated(LapTime);
+        }
+        public event EventHandler<LapEventArgs> LapTimeUpdated;
+        private void OnLapTImeUpdated(TimeSpan? lapTime) {
+            EventHandler<LapEventArgs> lapTimeUpdated = LapTimeUpdated;
+            if(lapTimeUpdated != null) {
+                lapTimeUpdated(this, new LapEventArgs(lapTime));
+            }
         }
     }
 }
